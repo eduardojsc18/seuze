@@ -628,6 +628,11 @@ video {
   }
 }
 
+.swiper {
+  padding-right: 2.3rem !important;
+  padding-left: 2.3rem !important
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -3571,8 +3576,16 @@ video {
   z-index: 50;
 }
 
+.z-100 {
+  z-index: 100;
+}
+
 .z-auto {
   z-index: auto;
+}
+
+.-z-1 {
+  z-index: -1;
 }
 
 .focus-within\:z-0:focus-within {
@@ -3599,8 +3612,16 @@ video {
   z-index: 50;
 }
 
+.focus-within\:z-100:focus-within {
+  z-index: 100;
+}
+
 .focus-within\:z-auto:focus-within {
   z-index: auto;
+}
+
+.focus-within\:-z-1:focus-within {
+  z-index: -1;
 }
 
 .focus\:z-0:focus {
@@ -3627,8 +3648,16 @@ video {
   z-index: 50;
 }
 
+.focus\:z-100:focus {
+  z-index: 100;
+}
+
 .focus\:z-auto:focus {
   z-index: auto;
+}
+
+.focus\:-z-1:focus {
+  z-index: -1;
 }
 
 .order-1 {
@@ -10023,6 +10052,48 @@ video {
   }
 }
 
+@-webkit-keyframes productBanner {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes productBanner {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes productBanner {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -10051,6 +10122,15 @@ video {
 .animate-shapeBg {
   -webkit-animation: shapeBg 5s ease-in-out infinite;
           animation: shapeBg 5s ease-in-out infinite;
+}
+
+.animate-productBanner {
+  -webkit-animation: productBanner 5s ease-in-out infinite both;
+          animation: productBanner 5s ease-in-out infinite both;
+}
+
+.animate-productBannerReverse {
+  animation: productBanner 5s ease-in-out infinite reverse both;
 }
 
 .cursor-auto {
@@ -12551,11 +12631,11 @@ video {
 }
 
 .rounded-shapes-banner-main {
-  border-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-shapes-banner-main-lg {
-  border-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-shapes-banner-background {
@@ -12608,13 +12688,13 @@ video {
 }
 
 .rounded-t-shapes-banner-main {
-  border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-  border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+  border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-t-shapes-banner-main-lg {
-  border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-  border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+  border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-t-shapes-banner-background {
@@ -12668,13 +12748,13 @@ video {
 }
 
 .rounded-r-shapes-banner-main {
-  border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-  border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+  border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-r-shapes-banner-main-lg {
-  border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-  border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+  border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-r-shapes-banner-background {
@@ -12728,13 +12808,13 @@ video {
 }
 
 .rounded-b-shapes-banner-main {
-  border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-  border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+  border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-b-shapes-banner-main-lg {
-  border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-  border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+  border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-b-shapes-banner-background {
@@ -12788,13 +12868,13 @@ video {
 }
 
 .rounded-l-shapes-banner-main {
-  border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-  border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+  border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-l-shapes-banner-main-lg {
-  border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-  border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+  border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-l-shapes-banner-background {
@@ -12839,11 +12919,11 @@ video {
 }
 
 .rounded-tl-shapes-banner-main {
-  border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-tl-shapes-banner-main-lg {
-  border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-tl-shapes-banner-background {
@@ -12887,11 +12967,11 @@ video {
 }
 
 .rounded-tr-shapes-banner-main {
-  border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-tr-shapes-banner-main-lg {
-  border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-tr-shapes-banner-background {
@@ -12935,11 +13015,11 @@ video {
 }
 
 .rounded-br-shapes-banner-main {
-  border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-br-shapes-banner-main-lg {
-  border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-br-shapes-banner-background {
@@ -12983,11 +13063,11 @@ video {
 }
 
 .rounded-bl-shapes-banner-main {
-  border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+  border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
 }
 
 .rounded-bl-shapes-banner-main-lg {
-  border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+  border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
 }
 
 .rounded-bl-shapes-banner-background {
@@ -32564,6 +32644,52 @@ video {
   content: none;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.line-clamp-5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.line-clamp-6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.line-clamp-none {
+  -webkit-line-clamp: unset;
+}
+
 @media (min-width: 480px) {
   .sm\:container {
     width: 100%;
@@ -35536,8 +35662,16 @@ video {
     z-index: 50;
   }
 
+  .sm\:z-100 {
+    z-index: 100;
+  }
+
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:-z-1 {
+    z-index: -1;
   }
 
   .sm\:focus-within\:z-0:focus-within {
@@ -35564,8 +35698,16 @@ video {
     z-index: 50;
   }
 
+  .sm\:focus-within\:z-100:focus-within {
+    z-index: 100;
+  }
+
   .sm\:focus-within\:z-auto:focus-within {
     z-index: auto;
+  }
+
+  .sm\:focus-within\:-z-1:focus-within {
+    z-index: -1;
   }
 
   .sm\:focus\:z-0:focus {
@@ -35592,8 +35734,16 @@ video {
     z-index: 50;
   }
 
+  .sm\:focus\:z-100:focus {
+    z-index: 100;
+  }
+
   .sm\:focus\:z-auto:focus {
     z-index: auto;
+  }
+
+  .sm\:focus\:-z-1:focus {
+    z-index: -1;
   }
 
   .sm\:order-1 {
@@ -41932,6 +42082,15 @@ video {
             animation: shapeBg 5s ease-in-out infinite;
   }
 
+  .sm\:animate-productBanner {
+    -webkit-animation: productBanner 5s ease-in-out infinite both;
+            animation: productBanner 5s ease-in-out infinite both;
+  }
+
+  .sm\:animate-productBannerReverse {
+    animation: productBanner 5s ease-in-out infinite reverse both;
+  }
+
   .sm\:cursor-auto {
     cursor: auto;
   }
@@ -44430,11 +44589,11 @@ video {
   }
 
   .sm\:rounded-shapes-banner-main {
-    border-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-shapes-banner-main-lg {
-    border-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-shapes-banner-background {
@@ -44487,13 +44646,13 @@ video {
   }
 
   .sm\:rounded-t-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-t-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-t-shapes-banner-background {
@@ -44547,13 +44706,13 @@ video {
   }
 
   .sm\:rounded-r-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-r-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-r-shapes-banner-background {
@@ -44607,13 +44766,13 @@ video {
   }
 
   .sm\:rounded-b-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-b-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-b-shapes-banner-background {
@@ -44667,13 +44826,13 @@ video {
   }
 
   .sm\:rounded-l-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-l-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-l-shapes-banner-background {
@@ -44718,11 +44877,11 @@ video {
   }
 
   .sm\:rounded-tl-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-tl-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-tl-shapes-banner-background {
@@ -44766,11 +44925,11 @@ video {
   }
 
   .sm\:rounded-tr-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-tr-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-tr-shapes-banner-background {
@@ -44814,11 +44973,11 @@ video {
   }
 
   .sm\:rounded-br-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-br-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-br-shapes-banner-background {
@@ -44862,11 +45021,11 @@ video {
   }
 
   .sm\:rounded-bl-shapes-banner-main {
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .sm\:rounded-bl-shapes-banner-main-lg {
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .sm\:rounded-bl-shapes-banner-background {
@@ -64085,6 +64244,52 @@ video {
   .sm\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .sm\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .sm\:line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .sm\:line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .sm\:line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .sm\:line-clamp-5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .sm\:line-clamp-6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
+
+  .sm\:line-clamp-none {
+    -webkit-line-clamp: unset;
+  }
 }
 
 @media (min-width: 768px) {
@@ -67059,8 +67264,16 @@ video {
     z-index: 50;
   }
 
+  .md\:z-100 {
+    z-index: 100;
+  }
+
   .md\:z-auto {
     z-index: auto;
+  }
+
+  .md\:-z-1 {
+    z-index: -1;
   }
 
   .md\:focus-within\:z-0:focus-within {
@@ -67087,8 +67300,16 @@ video {
     z-index: 50;
   }
 
+  .md\:focus-within\:z-100:focus-within {
+    z-index: 100;
+  }
+
   .md\:focus-within\:z-auto:focus-within {
     z-index: auto;
+  }
+
+  .md\:focus-within\:-z-1:focus-within {
+    z-index: -1;
   }
 
   .md\:focus\:z-0:focus {
@@ -67115,8 +67336,16 @@ video {
     z-index: 50;
   }
 
+  .md\:focus\:z-100:focus {
+    z-index: 100;
+  }
+
   .md\:focus\:z-auto:focus {
     z-index: auto;
+  }
+
+  .md\:focus\:-z-1:focus {
+    z-index: -1;
   }
 
   .md\:order-1 {
@@ -73455,6 +73684,15 @@ video {
             animation: shapeBg 5s ease-in-out infinite;
   }
 
+  .md\:animate-productBanner {
+    -webkit-animation: productBanner 5s ease-in-out infinite both;
+            animation: productBanner 5s ease-in-out infinite both;
+  }
+
+  .md\:animate-productBannerReverse {
+    animation: productBanner 5s ease-in-out infinite reverse both;
+  }
+
   .md\:cursor-auto {
     cursor: auto;
   }
@@ -75953,11 +76191,11 @@ video {
   }
 
   .md\:rounded-shapes-banner-main {
-    border-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-shapes-banner-main-lg {
-    border-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-shapes-banner-background {
@@ -76010,13 +76248,13 @@ video {
   }
 
   .md\:rounded-t-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-t-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-t-shapes-banner-background {
@@ -76070,13 +76308,13 @@ video {
   }
 
   .md\:rounded-r-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-r-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-r-shapes-banner-background {
@@ -76130,13 +76368,13 @@ video {
   }
 
   .md\:rounded-b-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-b-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-b-shapes-banner-background {
@@ -76190,13 +76428,13 @@ video {
   }
 
   .md\:rounded-l-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-l-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-l-shapes-banner-background {
@@ -76241,11 +76479,11 @@ video {
   }
 
   .md\:rounded-tl-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-tl-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-tl-shapes-banner-background {
@@ -76289,11 +76527,11 @@ video {
   }
 
   .md\:rounded-tr-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-tr-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-tr-shapes-banner-background {
@@ -76337,11 +76575,11 @@ video {
   }
 
   .md\:rounded-br-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-br-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-br-shapes-banner-background {
@@ -76385,11 +76623,11 @@ video {
   }
 
   .md\:rounded-bl-shapes-banner-main {
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .md\:rounded-bl-shapes-banner-main-lg {
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .md\:rounded-bl-shapes-banner-background {
@@ -95608,6 +95846,52 @@ video {
   .md\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .md\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .md\:line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .md\:line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .md\:line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .md\:line-clamp-5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .md\:line-clamp-6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
+
+  .md\:line-clamp-none {
+    -webkit-line-clamp: unset;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -98582,8 +98866,16 @@ video {
     z-index: 50;
   }
 
+  .lg\:z-100 {
+    z-index: 100;
+  }
+
   .lg\:z-auto {
     z-index: auto;
+  }
+
+  .lg\:-z-1 {
+    z-index: -1;
   }
 
   .lg\:focus-within\:z-0:focus-within {
@@ -98610,8 +98902,16 @@ video {
     z-index: 50;
   }
 
+  .lg\:focus-within\:z-100:focus-within {
+    z-index: 100;
+  }
+
   .lg\:focus-within\:z-auto:focus-within {
     z-index: auto;
+  }
+
+  .lg\:focus-within\:-z-1:focus-within {
+    z-index: -1;
   }
 
   .lg\:focus\:z-0:focus {
@@ -98638,8 +98938,16 @@ video {
     z-index: 50;
   }
 
+  .lg\:focus\:z-100:focus {
+    z-index: 100;
+  }
+
   .lg\:focus\:z-auto:focus {
     z-index: auto;
+  }
+
+  .lg\:focus\:-z-1:focus {
+    z-index: -1;
   }
 
   .lg\:order-1 {
@@ -104978,6 +105286,15 @@ video {
             animation: shapeBg 5s ease-in-out infinite;
   }
 
+  .lg\:animate-productBanner {
+    -webkit-animation: productBanner 5s ease-in-out infinite both;
+            animation: productBanner 5s ease-in-out infinite both;
+  }
+
+  .lg\:animate-productBannerReverse {
+    animation: productBanner 5s ease-in-out infinite reverse both;
+  }
+
   .lg\:cursor-auto {
     cursor: auto;
   }
@@ -107476,11 +107793,11 @@ video {
   }
 
   .lg\:rounded-shapes-banner-main {
-    border-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-shapes-banner-main-lg {
-    border-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-shapes-banner-background {
@@ -107533,13 +107850,13 @@ video {
   }
 
   .lg\:rounded-t-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-t-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-t-shapes-banner-background {
@@ -107593,13 +107910,13 @@ video {
   }
 
   .lg\:rounded-r-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-r-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-r-shapes-banner-background {
@@ -107653,13 +107970,13 @@ video {
   }
 
   .lg\:rounded-b-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-b-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-b-shapes-banner-background {
@@ -107713,13 +108030,13 @@ video {
   }
 
   .lg\:rounded-l-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-l-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-l-shapes-banner-background {
@@ -107764,11 +108081,11 @@ video {
   }
 
   .lg\:rounded-tl-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-tl-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-tl-shapes-banner-background {
@@ -107812,11 +108129,11 @@ video {
   }
 
   .lg\:rounded-tr-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-tr-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-tr-shapes-banner-background {
@@ -107860,11 +108177,11 @@ video {
   }
 
   .lg\:rounded-br-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-br-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-br-shapes-banner-background {
@@ -107908,11 +108225,11 @@ video {
   }
 
   .lg\:rounded-bl-shapes-banner-main {
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .lg\:rounded-bl-shapes-banner-main-lg {
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .lg\:rounded-bl-shapes-banner-background {
@@ -127131,6 +127448,52 @@ video {
   .lg\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .lg\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .lg\:line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .lg\:line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .lg\:line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .lg\:line-clamp-5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .lg\:line-clamp-6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
+
+  .lg\:line-clamp-none {
+    -webkit-line-clamp: unset;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -130105,8 +130468,16 @@ video {
     z-index: 50;
   }
 
+  .xl\:z-100 {
+    z-index: 100;
+  }
+
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:-z-1 {
+    z-index: -1;
   }
 
   .xl\:focus-within\:z-0:focus-within {
@@ -130133,8 +130504,16 @@ video {
     z-index: 50;
   }
 
+  .xl\:focus-within\:z-100:focus-within {
+    z-index: 100;
+  }
+
   .xl\:focus-within\:z-auto:focus-within {
     z-index: auto;
+  }
+
+  .xl\:focus-within\:-z-1:focus-within {
+    z-index: -1;
   }
 
   .xl\:focus\:z-0:focus {
@@ -130161,8 +130540,16 @@ video {
     z-index: 50;
   }
 
+  .xl\:focus\:z-100:focus {
+    z-index: 100;
+  }
+
   .xl\:focus\:z-auto:focus {
     z-index: auto;
+  }
+
+  .xl\:focus\:-z-1:focus {
+    z-index: -1;
   }
 
   .xl\:order-1 {
@@ -136501,6 +136888,15 @@ video {
             animation: shapeBg 5s ease-in-out infinite;
   }
 
+  .xl\:animate-productBanner {
+    -webkit-animation: productBanner 5s ease-in-out infinite both;
+            animation: productBanner 5s ease-in-out infinite both;
+  }
+
+  .xl\:animate-productBannerReverse {
+    animation: productBanner 5s ease-in-out infinite reverse both;
+  }
+
   .xl\:cursor-auto {
     cursor: auto;
   }
@@ -138999,11 +139395,11 @@ video {
   }
 
   .xl\:rounded-shapes-banner-main {
-    border-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-shapes-banner-main-lg {
-    border-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-shapes-banner-background {
@@ -139056,13 +139452,13 @@ video {
   }
 
   .xl\:rounded-t-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-t-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-t-shapes-banner-background {
@@ -139116,13 +139512,13 @@ video {
   }
 
   .xl\:rounded-r-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-r-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-r-shapes-banner-background {
@@ -139176,13 +139572,13 @@ video {
   }
 
   .xl\:rounded-b-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-b-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-b-shapes-banner-background {
@@ -139236,13 +139632,13 @@ video {
   }
 
   .xl\:rounded-l-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-l-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-l-shapes-banner-background {
@@ -139287,11 +139683,11 @@ video {
   }
 
   .xl\:rounded-tl-shapes-banner-main {
-    border-top-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-tl-shapes-banner-main-lg {
-    border-top-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-tl-shapes-banner-background {
@@ -139335,11 +139731,11 @@ video {
   }
 
   .xl\:rounded-tr-shapes-banner-main {
-    border-top-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-top-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-tr-shapes-banner-main-lg {
-    border-top-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-top-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-tr-shapes-banner-background {
@@ -139383,11 +139779,11 @@ video {
   }
 
   .xl\:rounded-br-shapes-banner-main {
-    border-bottom-right-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-right-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-br-shapes-banner-main-lg {
-    border-bottom-right-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-right-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-br-shapes-banner-background {
@@ -139431,11 +139827,11 @@ video {
   }
 
   .xl\:rounded-bl-shapes-banner-main {
-    border-bottom-left-radius: 26% 10% 50% 16% / 28% 10% 30% 16%;
+    border-bottom-left-radius: 22% 26% 50% 25% / 12% 13% 24% 17%;
   }
 
   .xl\:rounded-bl-shapes-banner-main-lg {
-    border-bottom-left-radius: 15% 10% 100% 20% / 30% 20% 50% 35%;
+    border-bottom-left-radius: 16% 10% 36% 20% / 30% 20% 45% 35%;
   }
 
   .xl\:rounded-bl-shapes-banner-background {
@@ -158654,4 +159050,51 @@ video {
   .xl\:ease-in-out {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .xl\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .xl\:line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .xl\:line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .xl\:line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .xl\:line-clamp-5 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+
+  .xl\:line-clamp-6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
+
+  .xl\:line-clamp-none {
+    -webkit-line-clamp: unset;
+  }
 }
+

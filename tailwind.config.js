@@ -21,21 +21,36 @@ module.exports = {
         'quicksand': ['"Quicksand"', 'sans-serif']
       },
 
+      zIndex: {
+        '-1': '-1',
+        '100': '100'
+      },
+
       borderRadius: {
-        'shapes-banner-main': '26% 10% 50% 16% / 28% 10% 30% 16%',
-        'shapes-banner-main-lg': '15% 10% 100% 20% / 30% 20% 50% 35%',
+        'shapes-banner-main': '22% 26% 50% 25% / 12% 13% 24% 17%',
+        'shapes-banner-main-lg': '16% 10% 36% 20% / 30% 20% 45% 35%',
         'shapes-banner-background': '10% 5% 14% 20% / 19% 9% 27% 35% '
       },
 
       animation: {
-        shapeBg: 'shapeBg 5s ease-in-out infinite'
+        shapeBg: 'shapeBg 5s ease-in-out infinite',
+        productBanner: 'productBanner 5s ease-in-out infinite both',
+        productBannerReverse: 'productBanner 5s ease-in-out infinite reverse both '
+
       },
 
       keyframes: {
         shapeBg: {
           '0%, 100%': { borderRadius: '10% 5% 14% 20% / 19% 9% 27% 35%' },
           '50%': { borderRadius: '7% 5% 13% 8% / 14% 9% 23% 16%' },
-        }
+        },
+
+        productBanner: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(10px)' },
+          '75%': { transform: 'translateX(-10px)' },        
+        },
+
       },
 
     },
@@ -43,5 +58,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // ...
+    require('@tailwindcss/line-clamp'),
+  ],
 }

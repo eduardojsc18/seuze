@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
+
+@layer components {
+
+    .swiper {
+        padding-right: 2.3rem !important;
+        padding-left: 2.3rem !important
+    }
+
+}
+
 @tailwind utilities;
+
