@@ -4,8 +4,19 @@
 @layer components {
 
     .swiper {
-        padding-right: 2.3rem !important;
-        padding-left: 2.3rem !important
+        padding-right: 2rem !important;
+        padding-left: 2rem !important
+    }
+
+    [x-cloak] { 
+        display: none !important; 
+    }
+
+    @media screen(md) {
+        .swiper {
+            padding-right: 2.3rem !important;
+            padding-left: 2.3rem !important
+        }
     }
 
 }

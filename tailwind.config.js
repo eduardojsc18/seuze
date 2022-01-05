@@ -32,6 +32,10 @@ module.exports = {
         'shapes-banner-background': '10% 5% 14% 20% / 19% 9% 27% 35% '
       },
 
+      opacity: {
+        '8': '.08'
+      },
+
       animation: {
         shapeBg: 'shapeBg 5s ease-in-out infinite',
         productBanner: 'productBanner 5s ease-in-out infinite both',
