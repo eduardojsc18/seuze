@@ -29,11 +29,13 @@ module.exports = {
       borderRadius: {
         'shapes-banner-main': '22% 26% 50% 25% / 12% 13% 24% 17%',
         'shapes-banner-main-lg': '16% 10% 36% 20% / 30% 20% 45% 35%',
-        'shapes-banner-background': '10% 5% 14% 20% / 19% 9% 27% 35% '
+        'shapes-banner-background': '10% 5% 14% 20% / 19% 9% 27% 35% ',
+        
+        'shapes-product': '8% 25% 6% 5% / 22% 32% 14% 15%'
       },
 
       opacity: {
-        '8': '.08'
+        '6': '.06'
       },
 
       animation: {
