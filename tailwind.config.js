@@ -31,7 +31,10 @@ module.exports = {
         'shapes-banner-main-lg': '16% 10% 36% 20% / 30% 20% 45% 35%',
         'shapes-banner-background': '10% 5% 14% 20% / 19% 9% 27% 35% ',
         
-        'shapes-product': '8% 25% 6% 5% / 22% 32% 14% 15%'
+        'shapes-product': '8% 25% 6% 5% / 22% 32% 14% 15%',
+
+        'shapes-footer': '90% 3% 3% 1% / 65% 8% 10% 5%',
+        
       },
 
       opacity: {
